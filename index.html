@@ -3,15 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>AJ's Web Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e2ecf0);
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      text-align: center;
+      color: #1a73e8;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-top: 1em;
+      color: #34495e;
+    }
+
+    p {
+      font-size: 1.05em;
+      padding-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>Welcome to AJ's Website</h1>
-  
-<h2>Week 1 Report</h2>
-
-<p>My first week at REU AICT research was mainly focused on finding research papers for the literature review. My team includes Abdullah Alghamdi and me. We focus on finding ASL data and determining how the research papers touch topics such as methods to track signs and body, the amount of time the face and hands are detected (signing and not signing), criteria for estimating the body pose, use open or closed captioning, and the percentage of success. I have developed two different methods for note-taking. One method involves a detailed explanation of whether the research papers talk about each topic. Other methods include simplified checklists and brief notes. This method is known as Too Long; Didn’t Read (TL;DR). I found 8 research papers that I can use. I went through their topics and created notes on whether they satisfy the checklist or not, and put them all in two documents.</p>
+  <div class="container">
+    <h1>Welcome to AJ's Website</h1>
+    <h2>Week 1 Report</h2>
+    <p>
+      My first week at REU AICT research was mainly focused on finding research papers for the literature review. My team includes Abdullah Alghamdi and me. We focus on finding ASL data and determining how the research papers touch topics such as methods to track signs and body, the amount of time the face and hands are detected (signing and not signing), criteria for estimating the body pose, use of open or closed captioning, and the percentage of success.
+    </p>
+    <p>
+      I have developed two different methods for note-taking. One involves detailed explanations of whether the papers address each topic. The other uses simplified checklists and brief notes (a TL;DR style). I found 8 useful papers, reviewed their content, and documented them across two organized files.
+    </p>
+  </div>
 
 </body>
 </html>
