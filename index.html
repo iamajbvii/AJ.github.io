@@ -98,3 +98,107 @@
 
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJ's Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #eef2f3, #dfe9f3);
+      font-family: 'Inter', sans-serif;
+      color: #2d3436;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .profile-pic {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1a73e8;
+    }
+
+    .title-text {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #1a73e8;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #34495e;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px;
+      }
+
+      .title-text {
+        font-size: 1.8rem;
+      }
+
+      .profile-pic {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <img src="portrait.png" alt="AJ's photo" class="profile-pic">
+      <div class="title-text">Welcome to AJ's Website</div>
+    </div>
+
+    <h2>Week 1 Report</h2>
+    <p>
+      My first week at REU AICT research was mainly focused on finding research papers for the literature review.
+      My team includes Abdullah Alghamdi and me. We focus on finding ASL data and determining how the research papers 
+      address topics like tracking signs and body movements, face/hand detection time, pose estimation criteria, 
+      captioning approaches, and overall success rates.
+    </p>
+    <p>
+      I developed two note-taking methods: one for detailed analysis of each paper, and another using checklists and 
+      TL;DR summaries. I reviewed eight papers, documented whether they fit our checklist, and organized everything 
+      into two clear documents.
+    </p>
+  </div>
+
+</body>
+</html>
+
