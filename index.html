@@ -55,6 +55,29 @@
       h2 {
         font-size: 1.5em;
       }
+      .header {
+	  display: flex;
+	  align-items: center;
+	  gap: 15px;
+	  justify-content: center;
+	  flex-wrap: wrap;
+	  margin-bottom: 30px;
+	}
+
+	.profile-pic {
+	  width: 60px;
+	  height: 60px;
+	  border-radius: 50%;
+	  object-fit: cover;
+	  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.title-text {
+	  font-size: 2.2em;
+	  font-weight: 800;
+	  color: #1a73e8;
+	}
+
     }
   </style>
 </head>
@@ -62,8 +85,8 @@
 <body>
 
 	<div class="header">
-	  <img src="portrait.png" alt="AJ's photo" class="profile-pic">
-	  <h1>Welcome to AJ's Website</h1>
+	    <img src="aj.png" alt="AJ's photo" class="profile-pic">
+ 	    <span class="title-text">Welcome to AJ's Website</span>
     <h2>Week 1 Report</h2>
     <p>
       My first week at REU AICT research was mainly focused on finding research papers for the literature review. My team includes Abdullah Alghamdi and me. We focus on finding ASL data and determining how the research papers touch topics such as methods to track signs and body, the amount of time the face and hands are detected (signing and not signing), criteria for estimating the body pose, use of open or closed captioning, and the percentage of success.
