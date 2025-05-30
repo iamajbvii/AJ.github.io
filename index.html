@@ -59,6 +59,47 @@
       margin-top: 10px;
     }
 
+    .disco-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .disco-list li {
+      margin: 8px 0;
+    }
+
+    .disco-list a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      animation: rainbow 2s infinite linear, glow 1s infinite alternate;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .disco-list a:hover {
+      transform: scale(1.15) rotate(3deg);
+    }
+
+    @keyframes rainbow {
+      0% { color: red; }
+      16% { color: orange; }
+      32% { color: yellow; }
+      48% { color: green; }
+      64% { color: blue; }
+      80% { color: indigo; }
+      100% { color: violet; }
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff0, 0 0 20px #f0f, 0 0 40px #0ff;
+      }
+      100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #f0f, 0 0 60px #ff0;
+      }
+    }
+
     @media (max-width: 600px) {
       .container {
         padding: 25px;
@@ -83,37 +124,39 @@
       <div class="title-text">Welcome to AJ's Website</div>
     </div>
 
-	<h2>Week 2 Report</h2>
-	<p>
-	<h3>ASL data</h3>
-	<ul>
-		<li><a href="https://www.youtube.com/@SorensonVRSVideos" target="_blank">Sorenson - YouTube</a></li>
-		<li><a href="https://www.youtube.com/@TheDailyMoth" target="_blank">Daily Moth - YouTube</a></li>
-		<li><a href="https://www.dailymoth.com/blog" target="_blank">Daily Moth - Website</a></li>
-		<li><a href="https://members.dailymoth.com" target="_blank"> Daily Moth - (requires membership)</a></li>
-		<li><a href="https://www.youtube.com/@GallaudetU" target="_blank">Gallaudet University (GU) - YouTube</a></li>
-		<li><a href="https://www.youtube.com/@GallaudetUniversityPress target="_blank"">GU Press - YouTube</a></li>
-		<li><a href="https://www.youtube.com/@RITLibraries/videos target="_blank"">Rochester Institute of Technology (RIT) - YouTube</a></li>
-		<li><a href="https://www.youtube.com/@ConvoCommunications target="_blank"">Convo - YouTube</a></li>
-	</ul>
+    <h2>Week 2 Report</h2>
+    <h3>ASL data</h3>
+    <ul class="disco-list">
+      <li><a href="https://www.youtube.com/@SorensonVRSVideos" target="_blank">Sorenson - YouTube</a></li>
+      <li><a href="https://www.youtube.com/@TheDailyMoth" target="_blank">Daily Moth - YouTube</a></li>
+      <li><a href="https://www.dailymoth.com/blog" target="_blank">Daily Moth - Website</a></li>
+      <li><a href="https://members.dailymoth.com" target="_blank">Daily Moth - (requires membership)</a></li>
+      <li><a href="https://www.youtube.com/@GallaudetU" target="_blank">Gallaudet University (GU) - YouTube</a></li>
+      <li><a href="https://www.youtube.com/@GallaudetUniversityPress" target="_blank">GU Press - YouTube</a></li>
+      <li><a href="https://www.youtube.com/@RITLibraries/videos" target="_blank">Rochester Institute of Technology (RIT) - YouTube</a></li>
+      <li><a href="https://www.youtube.com/@ConvoCommunications" target="_blank">Convo - YouTube</a></li>
+    </ul>
 
-	<h3>What I did this week</h3>
-		I developed a code that will start clipping video when it detects that hands are moving, and will stop clipping when the hands stop moving and are at rest. I tested the code with one of my final project presentations, and it seems to work. It did successfully clip video when I started talking, and stopped clipping when I stopped talking. Although the code is not perfect, as it clips when I do gestures or gesticulations. This led me to think of my research question.
-		I created a draft PowerPoint for presentation next Friday and started a draft on the Lit Review Paper
+    <h3>What I did this week</h3>
+    <p>
+      I developed a code that will start clipping video when it detects that hands are moving, and will stop clipping when the hands stop moving and are at rest. I tested the code with one of my final project presentations, and it seems to work. It did successfully clip video when I started talking, and stopped clipping when I stopped talking. Although the code is not perfect, as it clips when I do gestures or gesticulations. This led me to think of my research question.
+      I created a draft PowerPoint for presentation next Friday and started a draft on the Lit Review Paper.
+    </p>
 
-	<h3>Research Question</h3>
-		How can AI determine the difference between when a person is talking with sign language and when a person is talking using gesture and/or gesticulation?
-		Is it possible to develop a model that can naturally detect sign language and normal gestures and tell the difference between them?
-		What are the qualifications or requirements to determine if the video is qualified to be used in training data to train the model to detect the difference between sign language and gesture/gesticulation?
+    <h3>Research Question</h3>
+    <p>
+      How can AI determine the difference between when a person is talking with sign language and when a person is talking using gesture and/or gesticulation?<br>
+      Is it possible to develop a model that can naturally detect sign language and normal gestures and tell the difference between them?<br>
+      What are the qualifications or requirements to determine if the video is qualified to be used in training data to train the model to detect the difference between sign language and gesture/gesticulation?
+    </p>
 
-	<h3>Action Plan</h3>
-		Need to find which videos are copyrighted and which aren’t
-		Contact them to obtain permission
-		I did develop a draft email, but I haven’t sent the email
-		Get access to the NAS so I can start testing video in my code
-	</p>
-
-
+    <h3>Action Plan</h3>
+    <p>
+      Need to find which videos are copyrighted and which aren’t.<br>
+      Contact them to obtain permission.<br>
+      I did develop a draft email, but I haven’t sent the email.<br>
+      Get access to the NAS so I can start testing video in my code.
+    </p>
 
     <h2>Week 1 Report</h2>
     <p>
@@ -131,4 +174,3 @@
 
 </body>
 </html>
-
