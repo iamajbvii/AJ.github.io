@@ -123,7 +123,36 @@
       <img src="portrait.png" alt="AJ's photo" class="profile-pic">
       <div class="title-text">Welcome to AJ's Website</div>
     </div>
+	
+	<h3>Week 4 Report</h2>
+	<h3>What I did this week</h3>
+	
+	<p>After our meeting on Monday, we finally found our concentration. I focused on 
+	manually trimming videos that include when a person starts signing and stops signing. 
+	I eliminated any footage that involves at least 2 people signing and anything else that 
+	is unrelated to signing. I developed a code where I use MediaPipe Holistic Tracking. It 
+	includes 468 points on your body, head, arms, and hands. We narrowed it to 85 points. 
+	21 points on both hands (42), 6 points on the body, and 37 points on the face. They 
+	combined for 85 points. With the edited video, I ran the video with a code that will 
+	track the 85 points and log every time any point disappears from tracking. When the point 
+	disappears, the code will check the timestamp of when it disappeared and the location 
+	((X, Y) coordinates) and log this information. We plan to measure whether Deaf Mosaic 
+	is as good as newer videos from the University Communication. We plan to observe the data
+	 when the tracking disappears and figure out which videos we should preserve for data and 
+	 which should be eliminated. We changed our approach as Mohammed will log all the timestamps 
+	 on when a person starts signing and stops. Instead of manually trimming the videos myself. 
+	 I developed a code that will look at the start time stamp and end time stamp and extract 
+	 the video within that time stamp. The code was successful as it extracted videos at every 
+	 time stamp and created the video in separate MP4 files. This approach saves a lot of time on my end.</p>
 
+	<h3>What I plan to do next week</h3>
+	<p>I need to complete trimming all the videos that I received from Mohammed. After this, 
+	I need to go through every trimmed video with my code that will track all 85 points and 
+	log whether the points disappear. Then, I will develop a database where I can measure 
+	and observe which videos have the best data.</p>
+
+	
+	
 	<h2>Week 3 Report</h2>
 	<h3>What I did this week</h3>
 
